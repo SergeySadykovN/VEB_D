@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Cart</title>
+</head>
+<body>
+    <h1>Your Cart</h1>
+    <ul>
+        {% for course in cart.courses.all %}
+            <li>{{ course.title }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
